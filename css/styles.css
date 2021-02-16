@@ -15,6 +15,29 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
+/* TEXT */
+
+p {
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: #ffbb36;
+    text-decoration:none;
+}
+
+h2 {
+    color: #ffbb36;
+    text-decoration: none;
+}
+
+
+h3 {
+    color: #ffbb36;
+    text-decoration:none;
+}
+
 /* HEADER */
 
 header {
@@ -69,12 +92,42 @@ header nav {
 
  /* MAIN */
 
- .background {
+  main {
+      display: grid;
+      grid-template-rows: 1fr auto auto auto auto;
+  }
+  
+  .background {
      background-size: cover;
      width: 100%;
      margin: 0px;
+    }
 
- }
+    .page_links {
+        text-align: center;
+        background-color:#002554;
+        border: 5px solid white;
+        margin: 10px;
+        padding-top: 0px;
+    }
+
+    .page_links:hover {
+        background-color:black;
+        margin: 5px;
+    }
+
+    .Link {
+        background-size: cover;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .site_image {
+        width: 100%;
+        align-items: center;
+        size: 10px;
+    
+    }
 
  /* FOOTER */
 
@@ -87,22 +140,24 @@ header nav {
     height: auto;
     margin: 0px;
   }
-
-  .follow {
-      display: inline-block;
+  
+  .fab {
+      padding: 3px;
+      margin: 3px;
+      align-self: center;
+      color: #ffbb36;
   }
+
 
   footer a {
       color: #ffbb36; ;
   }
   
-  .information {
-    display: block;
-    margin: 10px auto;
-  }
+ 
   .footer_content {
     display: inline;
     align-items: center;
+    text-align: center;
   } 
   
   .subscribe {
@@ -119,5 +174,36 @@ header nav {
     flex-basis: 50%;
     padding: 10px 30px;
   }
+
+  @media (min-width: 1000px) {
+      main {
+          display: grid;
+          grid-template-columns: auto auto auto auto;
+          grid-template-rows: 1fr auto;
+      }
+
+      .page_links {
+          grid-row: 2;
+      }
+
+      .footer_content {
+          display: flex;
+         }
+
+         header nav {
+             display: block;
+             position: static;
+         }
+
+         header label {
+             display: none;
+         }
+
+         header nav li {
+             display: inline-block;
+         }
+
+  }
   
  
+  
