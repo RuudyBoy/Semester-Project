@@ -18,7 +18,12 @@ body {
 /* TEXT */
 
 p {
+    color:black;
+    text-align: center;
+}
+footer p {
     color: white;
+    text-align: center;
 }
 
 h1 {
@@ -30,12 +35,14 @@ h1 {
 h2 {
     color: #ffbb36;
     text-decoration: none;
+    text-align: center;
 }
 
 
 h3 {
     color: #ffbb36;
     text-decoration:none;
+    text-align: center;
 }
 
 /* HEADER */
@@ -91,17 +98,29 @@ header nav {
 
 
  /* MAIN */
+ 
+ .sites {
+ display: grid;
+ grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
 
-  main {
-      display: grid;
-      grid-template-rows: 1fr auto auto auto auto;
+  .page_background {
+   
   }
   
-  .background {
-     background-size: cover;
-     width: 100%;
-     margin: 0px;
-    }
+  .page_image{
+      width: 100%;
+      margin: 0%;
+  }
+
+  .Image_title {
+      margin-top: 20%;
+      font-size: 1em;
+      position: absolute;
+      text-align:center;
+      width: 100%;
+  }
+ 
 
     .page_links {
         text-align: center;
@@ -127,6 +146,32 @@ header nav {
         align-items: center;
         size: 10px;
     
+    }
+
+    .see_you {
+        height: 100px;
+        margin: auto;
+        display: grid;
+        border-radius: 100%;
+    }
+
+    .explore {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        text-align: center;
+        align-items: center;
+    }
+
+    .explore_info {
+        background-color: white;
+        background-position: cover;
+    }
+
+    .explore_image {
+        border-radius: 100%; 
+        height: 180px;
+        width: 200px;
+
     }
 
  /* FOOTER */
@@ -176,15 +221,11 @@ header nav {
   }
 
   @media (min-width: 1000px) {
-      main {
-          display: grid;
-          grid-template-columns: auto auto auto auto;
-          grid-template-rows: 1fr auto;
-      }
-
-      .page_links {
-          grid-row: 2;
-      }
+    .sites {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+         }
 
       .footer_content {
           display: flex;
@@ -203,7 +244,15 @@ header nav {
              display: inline-block;
          }
 
-  }
+         .explore {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            text-align: center;
+            align-items: center;
+        }
+        
+        }
   
  
   
