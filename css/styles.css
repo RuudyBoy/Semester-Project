@@ -1,16 +1,11 @@
 @font-face {
-    font-family: "StarJedi-DGRW";
-    src: url(../Fonts/StarJedi-DGRW.ttf) format(trutype);
+    font-family: "FredokaOne";
+    src: url(/Fonts/FredokaOne-Regular.ttf) format(truetype) ;
 }
 
 @font-face {
     font-family: "PottaOne-Regular";
-    src: url(../Fonts/PottaOne-Regular.ttf) format(trutype);
-}
-
-@font-face {
-    font-family: "Roboto-Black";
-    src: url(../Fonts/Roboto-Black.ttf) format(trutype);
+    src: url(/Fonts/PottaOne-Regular.ttf) format(truetype);
 }
 
 body {
@@ -23,28 +18,28 @@ body {
 /* TEXT */
 
 p {
-    font-family: "Roboto-Black" ,Verdana, Tahoma, sans-serif;
-    color:black;
+    color:#002554;
     font-size: 15px;
     text-align: center;
+    max-width: 250px  ;
+    margin: 0 auto;
     
 }
 footer p {
-    color: white;
     text-align: center;
 }
 
 h1 {
-    font-family: "StarJedi-DGRW", Verdana, Tahoma, sans-serif;
+    font-family: "PottaOne-Regular", Verdana, Tahoma, sans-serif;
     text-align: center;
-    color:black;
+    color:#3D58C0;
     font-size: 40px;
     text-decoration:none;
 }
 
 h2 {
-    font-family: "StarJedi-DGRW", Verdana, Tahoma, sans-serif;
-    color: #ffbb36;
+    font-family: "FredokaOne", Verdana, Geneva, Tahoma, sans-serif;
+    color:#3D58C0;
     text-decoration: none;
     font-size: 30px;
     text-align: center;
@@ -52,8 +47,7 @@ h2 {
 
 
 h3 {
-    font-family: "StarJedi-DGRW", Verdana, Tahoma, sans-serif;
-    color: #ffbb36;
+    color:#69FD9F;
     font-size: 20px;
     text-decoration:none;
     text-align: center;
@@ -70,13 +64,13 @@ a {
 /* HEADER */
 
 header {
-    background-color: white;
+    background-color:#3D58C0;
     display: flex;
     align-items: center;
 }
 
 header a {
-    color: black;
+    color:#69FD9F;
     text-decoration: none;
 }
 
@@ -91,11 +85,11 @@ nav  li,i{
     display: inline-block;
     display:none;
     padding: 40px 5px;
-    background:white;
+    background:#3D58C0;
 }
 
 i {
-   color:#002554;
+   color:#69FD9F;
    margin-left: 160px;
     
 }
@@ -122,11 +116,12 @@ header nav {
  /* MAIN */
  
   .Homepage_image {
-      background-image: url(../images/Homepage.jpg);
+      background-image: url(../images/Blueback.jpg);
       background-size: cover;
       background-repeat: no-repeat;
       text-align: center;
       min-height: 100vh;
+      margin: 0px;
   }
 
   .Homepage_image h1 {
@@ -134,11 +129,19 @@ header nav {
   }
 
   .homepage_images {
-    align-items: center;
     height: 180px;
     width: 200px;
-    border-radius: 100%; 
+    border-radius: 100%;
   } 
+
+  .background_image {
+
+  }
+
+  .Image {
+    width: 100%;
+    margin: 0px;
+  }
 
   .sites {
     display: grid;
@@ -152,12 +155,21 @@ header nav {
     }
 
     .CTA_button {
-     background-color: cadetblue;
-     border: 5px solid yellow;
-     padding: 10px 20px;
-     color: white;
-    
+     background-color:#002554;
+     border: px solid #40A765;
+     border-radius: 20px;
+     padding: 10px 50px;
+     color: #FFF700;
     }
+
+    
+    .CTA_button :hover {
+        background-color:#40A765;
+        border-radius: 20px;
+        padding: 15px 60px;
+        color:black;
+       }
+
 
 
     .see_you {
@@ -165,6 +177,7 @@ header nav {
         margin: auto;
         display: grid;
         border-radius: 100%;
+        padding-top: 20px;
     }
 
     .explore {
@@ -207,8 +220,8 @@ header nav {
     position: relative;
     bottom: 0px;
     width: 100%;
-    background: #002554;
-    color: white;
+    background:#3D58C0 ;
+    color:#69FD9F;
     height: auto;
     margin: 0px;
     margin-top: 30px;
@@ -218,14 +231,23 @@ header nav {
       padding: 3px;
       margin: 3px;
       align-self: center;
-      color: #ffbb36;
+      color: #FFF700;
   }
 
 
   footer a {
-      color: #ffbb36; ;
+      color: #FFF700; ;
+  }
+
+  footer i {
+      background-color:#3D58C0 ;
   }
   
+  footer p {
+      max-width: 300px;
+      padding: 10px;
+      color:white;
+  }
  
   .footer_content {
     display: inline;
@@ -257,12 +279,18 @@ header nav {
           grid-gap: 20px;
       }
 
-      .homepage_images {
+      .homepage_images , .explore_image {
         align-items: center;
         height: auto;
         width: 100%;
-        border-radius: 0px;
+        border-radius: 50px;
       } 
+
+      .CTA_button {
+          padding: 10px 80px;
+          border-radius: 0px;
+          font-size: 20px;
+      }
 
       .footer_content {
           display: flex;
@@ -296,22 +324,27 @@ header nav {
             margin:0 auto ;
         }
 
+        .Info_links {
+            padding: 50px;
+        }
+
+
         .Text {
             max-width: 800px;
             margin: 0 auto;
         }
 
+        p {
+            max-width: 800px;
+        }
+
         h1 {
-            font-family: "StarJedi-DGRW", Verdana, Tahoma, sans-serif;
             text-align: center;
-            color:black;
             font-size: 90px;
             text-decoration:none;
         }
         
         h2 {
-            font-family: "StarJedi-DGRW", Verdana, Tahoma, sans-serif;
-            color: #ffbb36;
             text-decoration: none;
             font-size: 50px;
             text-align: center;
@@ -319,8 +352,6 @@ header nav {
         
         
         h3 {
-            font-family: "StarJedi-DGRW", Verdana, Tahoma, sans-serif;
-            color: #ffbb36;
             font-size: 30px;
             text-decoration:none;
             text-align: center;
