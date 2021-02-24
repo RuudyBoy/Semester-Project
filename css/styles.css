@@ -1,12 +1,4 @@
-@font-face {
-    font-family: "FredokaOne";
-    src: url(/Fonts/FredokaOne-Regular.ttf) format(truetype) ;
-}
 
-@font-face {
-    font-family: "PottaOne-Regular";
-    src: url(/Fonts/PottaOne-Regular.ttf) format(truetype);
-}
 
 body {
     margin: 0px;
@@ -30,7 +22,6 @@ footer p {
 }
 
 h1 {
-    font-family: "PottaOne-Regular", Verdana, Tahoma, sans-serif;
     text-align: center;
     color:#3D58C0;
     font-size: 40px;
@@ -38,7 +29,7 @@ h1 {
 }
 
 h2 {
-    font-family: "FredokaOne", Verdana, Geneva, Tahoma, sans-serif;
+   
     color:#3D58C0;
     text-decoration: none;
     font-size: 30px;
@@ -116,7 +107,7 @@ header nav {
  /* MAIN */
  
   .Homepage_image {
-      background-image: url(../images/Blueback.jpg);
+      background-image: url(../images/Blådot.jpg);
       background-size: cover;
       background-repeat: no-repeat;
       text-align: center;
