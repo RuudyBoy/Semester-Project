@@ -1,4 +1,12 @@
+@font-face {
+    font-family: "FredokaOne_Regular";
+    src: url(../Fonts/FredokaOne-Regular.ttf) format(truetype);
+}
 
+@font-face {
+    font-family: "PermanentMarker-Regular";
+    src: url(../Fonts/PermanentMarker-Regular.ttf) format(truetype);
+}
 
 body {
     margin: 0px;
@@ -10,6 +18,8 @@ body {
 /* TEXT */
 
 p {
+    
+    font-family: 'Fredoka One', cursive,Verdana, Tahoma, sans-serif;
     color:#002554;
     font-size: 15px;
     text-align: center;
@@ -22,6 +32,7 @@ footer p {
 }
 
 h1 {
+    font-family: 'Permanent Marker', cursive,Verdana, Tahoma, sans-serif;
     text-align: center;
     color:#3D58C0;
     font-size: 40px;
@@ -30,6 +41,7 @@ h1 {
 
 h2 {
    
+    font-family: 'Fredoka One', cursive,Verdana, Tahoma, sans-serif;
     color:#3D58C0;
     text-decoration: none;
     font-size: 30px;
@@ -38,6 +50,7 @@ h2 {
 
 
 h3 {
+    font-family: 'Permanent Marker', cursive,Verdana, Tahoma, sans-serif;
     color:#69FD9F;
     font-size: 20px;
     text-decoration:none;
@@ -50,7 +63,12 @@ h3 {
 }
 
 a {
+    font-family: 'Fredoka One', cursive,Verdana, Tahoma, sans-serif;
     text-decoration: none;
+}
+
+label {
+    font-family: 'Permanent Marker', cursive,Verdana, Tahoma, sans-serif;
 }
 /* HEADER */
 
@@ -61,6 +79,7 @@ header {
 }
 
 header a {
+
     color:#69FD9F;
     text-decoration: none;
 }
@@ -107,6 +126,7 @@ header nav {
  /* MAIN */
  
   .Homepage_image {
+      background-position: top;
       background-image: url(../images/Blådot.jpg);
       background-size: cover;
       background-repeat: no-repeat;
@@ -125,11 +145,9 @@ header nav {
     border-radius: 100%;
   } 
 
-  .background_image {
-
-  }
 
   .Image {
+    
     width: 100%;
     margin: 0px;
   }
@@ -173,7 +191,7 @@ header nav {
 
     .explore {
         display: grid;
-        grid-template-rows:  1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
         text-align: center;
         align-items: center;
     }
@@ -247,16 +265,19 @@ header nav {
   } 
   
   .subscribe {
+    align-self: flex-start;
     flex-basis: 50%;
     padding: 10px 30px;
   }
   
   .entrance {
+    align-self: flex-start;
     flex-basis: 50%;
     padding: 10px 30px;
   }
   
   .information {
+    align-self: flex-start;
     flex-basis: 50%;
     padding: 10px 30px;
   }
@@ -290,7 +311,6 @@ header nav {
          header nav {
             display: block;
             position: static;
-            margin:auto;
             font-size: 30px;
          }
 
