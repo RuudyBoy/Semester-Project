@@ -151,6 +151,10 @@ header nav {
     height: 180px;
     width: 200px;
     border-radius: 100%;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   } 
 
 
@@ -159,6 +163,7 @@ header nav {
     width: 100%;
     margin: 0px;
   }
+
 
   .sites {
     display: grid;
@@ -180,16 +185,8 @@ header nav {
      border: px solid #40A765;
      border-radius: 20px;
      padding: 10px 50px;
-     color: #FFF700;
+     color:white;
     }
-
-    
-    .CTA_button :hover {
-        background-color:#40A765;
-        border-radius: 20px;
-        padding: 15px 60px;
-        color:black;
-       }
 
 
 
@@ -325,7 +322,7 @@ header nav {
         align-items: center;
         height: auto;
         width: 100%;
-        border-radius: 50px;
+        border-radius: 0px;
       } 
       
       .explore_image {
