@@ -15,7 +15,7 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
-/* TEXT */
+/* TEXTANDLINKS */
 
 p {
     
@@ -78,6 +78,21 @@ a {
 label {
     font-family: 'Permanent Marker', cursive,Verdana, Tahoma, sans-serif;
 }
+
+.active_page {
+    color: #FFF700;
+}
+
+.CTA_button {
+    background-color:#002554;
+    border: px solid #40A765;
+    border-radius: 20px;
+    padding: 10px 50px;
+    color:white;
+   }
+
+
+
 /* HEADER */
 
 header {
@@ -131,7 +146,7 @@ header nav {
  }
 
 
- /* MAIN */
+ /*HOMEPAGE*/
  
   .Homepage_image {
       background-position: top;
@@ -159,7 +174,6 @@ header nav {
 
 
   .Image {
-    
     width: 100%;
     margin: 0px;
   }
@@ -171,24 +185,14 @@ header nav {
     grid-gap: 10px;
   }
 
-  .active_page {
-      color: #FFF700;
-  }
-
   .Info_links {
       text-align: center;
       padding: 10px;
     }
 
-    .CTA_button {
-     background-color:#002554;
-     border: px solid #40A765;
-     border-radius: 20px;
-     padding: 10px 50px;
-     color:white;
-    }
+   
 
-
+    /*VISITPAGE*/
 
     .see_you {
         height: 100px;
@@ -198,27 +202,31 @@ header nav {
         padding-top: 20px;
     }
 
-    .explore {
+    /*EVENTSPAGE*/
+
+    .events {
         display: grid;
         grid-template-rows: auto auto auto;
         text-align: center;
         align-items: center;
     }
 
-    .explore_info {
+    .events_info {
         align-self: start;
         max-width: 250px;
         margin:0 auto ;
         background-color: white;
     }
 
-    .explore_image {
+    .events_image {
         margin-top: 40px;
         border-radius: 100%; 
         height: 180px;
         width: 200px;
 
     }
+
+    /*CONTACTPAGE*/
 
     .follow_contact {
         display: block;
@@ -309,6 +317,12 @@ header nav {
       background-color: white;
       color:black;
   }
+
+  iframe {
+      height: 500px;
+      width: auto;
+      margin: 0px;
+  }
   @media (min-width: 1000px) {
       
       .sites {
@@ -325,7 +339,7 @@ header nav {
         border-radius: 0px;
       } 
       
-      .explore_image {
+      .events_image {
           width: 100%;
           height: 300px;
       }
@@ -354,7 +368,7 @@ header nav {
              display: inline-block;
          }
 
-         .explore {
+         .events {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: auto;
@@ -362,7 +376,7 @@ header nav {
             align-items: center;
         }
 
-        .explore_info {
+        .events_info {
             max-width: 400px;
             margin:0 auto ;
         }
