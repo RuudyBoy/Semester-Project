@@ -79,12 +79,17 @@ label {
   color: #fff700;
 }
 
-.CTA_button {
+.cta_button {
   background-color: #002554;
-  border: px solid #40a765;
   border-radius: 20px;
   padding: 10px 50px;
   color: white;
+}
+
+.cta_button:hover {
+  color: #69fd9f;
+  padding: 15px 55px;
+  transition: 0.5s;
 }
 
 /* HEADER */
@@ -227,7 +232,7 @@ i {
 }
 
 .events_background {
-  background-image: url(../images/rsz_miles-burke-idhx-mocdsk-unsplash.jpg);
+  background-image: url(../images/andrew-ruiz-348421.jpg);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -240,7 +245,7 @@ i {
 /* EXPLORE */
 
 .explore_background {
-  background-image: url(../images/rsz_miles-burke-idhx-mocdsk-unsplash.jpg);
+  background-image: url(../images/Explore.jpg);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -265,7 +270,7 @@ i {
 }
 
 .contact_background {
-  background-image: url(../images/rsz_miles-burke-idhx-mocdsk-unsplash.jpg);
+  background-image: url(../images/contact.jpg);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -273,6 +278,32 @@ i {
   text-align: center;
   margin: 0px;
   padding-bottom: 50px;
+}
+
+.contact_form {
+  text-align: center;
+  align-items: center;
+  color: #17225c;
+  background-color: white;
+  margin: 10px auto;
+  max-width: fit-content;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #3d58c0;
+}
+
+.contact_input {
+  width: 100%;
+}
+
+.contact_form label {
+  color: #3d58c0;
+  display: grid;
+}
+
+.error {
+  padding: 5px;
+  color: red;
 }
 
 /* FOOTER */
